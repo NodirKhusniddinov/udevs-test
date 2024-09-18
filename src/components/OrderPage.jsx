@@ -176,7 +176,7 @@ function OrderPage() {
                 {
                   name: "Гамбургер",
                   quantity: 1,
-                  extras: "С сыром,Без лука",
+                  extras: "С сыром",
                 },
               ]}
             />
