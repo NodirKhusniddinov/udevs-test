@@ -8,7 +8,7 @@ import { IoSettingsSharp } from "react-icons/io5";
 import { MdInsertChart, MdPeople, MdPersonAddAlt1 } from "react-icons/md";
 
 const Sidebar = () => {
-  const [activeMenu, setActiveMenu] = useState("recruitment");
+  const [activeMenu, setActiveMenu] = useState(null);
 
   const toggleMenu = (menu) => {
     if (activeMenu === menu) {
@@ -19,7 +19,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="flex">
+    <div className="flex max-w-[900px]">
       <div className="w-14 border-r  border-[rgba(229,233,235,1)] h-screen flex flex-col items-center ">
         <div className="h-14 w-14 p-3 border-b  border-[rgba(229,233,235,1)] ">
           <img src="assets/logo.svg" alt="Logo" className="w-8 h-8 mb-8" />
@@ -101,7 +101,7 @@ const Sidebar = () => {
 
           <div className="h-14 w-14 p-3   border-[rgba(229,233,235,1)] border-t">
             <img
-              src="assets/profile_img.png"
+              src="assets/profile_img.svg"
               alt="Profile"
               className="w-8 h-8 mb-8 cursor-pointer"
             />
